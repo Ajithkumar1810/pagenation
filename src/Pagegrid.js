@@ -7,7 +7,8 @@ import './Pagegrid.css'
 
 
 function Pagegrid(){
-    const [users, setUser]=useState(JsonData);
+    const [users]=useState(JsonData);
+    // , setUser
     const [pageNumber,setPageNumber]=useState(0)
     const userPerPage=2
     const pageVisited=pageNumber* userPerPage
@@ -30,7 +31,7 @@ function Pagegrid(){
                         <h3>{user.city}</h3>
                         <h3>{user.address}</h3>
                         <h3>{user.pincode}</h3>
-                
+
                     </div>
         );
     })
