@@ -50,7 +50,7 @@ table {
     width: 100%;
     height: 7vh;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-top: 2vh;
     font-size: 1vmax;
    
@@ -59,12 +59,19 @@ table {
     padding:1vmax;
    margin: 1vmax;
     border-radius: 5px;
-    border: 1px solid rgb(2, 2, 15);
-    color: blue;
+    border: 1px solid white;
+    color: black;
     cursor: pointer;
-    background-color: rgb(213, 213, 213);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1vmax;
+    font-weight: bold;
   }
   .paginationbutton a:hover{
     color: white;
-    background-color: black;
+    background-color: rgb(119, 194, 218);
+  }
+  .paginationActive a{
+    color:white;
+    background-color: rgb(119, 194, 218);
   }

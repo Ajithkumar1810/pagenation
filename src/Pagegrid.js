@@ -75,8 +75,8 @@ function Pagegrid(){
                 {displayUser}
                 <br></br>
             <ReactPaginate
-                previousLabel={"Previous"}
-                nextLabel={"Next"}
+                previousLabel={"<"}
+                nextLabel={">"}
                 pageCount={pageCount}
                 onPageChange={changePage}
                 containerClassName={"paginationbutton"}
