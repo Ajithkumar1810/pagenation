@@ -30,7 +30,7 @@ table {
      font-weight: bold;
   }
   td[id="email"]{
-        display: block;
+        word-wrap: break-word;
         
   }
   tr{
