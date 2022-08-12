@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:azure; */
+}
+.container{
+    width: 100%;
+    background-color: #1722a26b;
+    border-style: outset;
+    border-radius: 5%;
+    padding-top: 2%;
+    margin-top: 2%;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    padding-bottom: 2%;
+    
+}
+.container1 input,.container1 select{
+  background-color: rgb(244, 248, 248);
+  border: none;
+  border-bottom:black ;
+  border-bottom: groove;
+  margin-right: 5%;
+  font-size: 1.2vmax;
+  color: gray;
+  margin-top: 2%;
+}
+.container1 select{
+    width: 12%;
+}
+.genderclass{
+    font-size: 1.2rem;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.container2{
+    align-items:flex-start;
+    display: flex;
+    margin-top: 2%;
+   
+    
+}
+.container2 input{
+    background-color: rgba(255, 255, 0, 0.915);
+    width: 10vmax;
+    margin-right:2% ;
+    font-size: 2vmax;
+    cursor: pointer;
+    border-radius: 8%;
+}
+.container2 input:hover{
+    background-color: aquamarine;
+}
+.container3{
+    align-items:flex-start;
+    display: flex;
+    
+   
+
+}
+.container3 input{
+    background-color: rgb(244, 248, 248);
+  border: none;
+  border-bottom:black ;
+  border-bottom: groove;
+  margin-right: 2%;
+  font-size: 1.5vmax;
+  color: gray;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+.container3 input[id='clear']{
+    width: 10%;
+    background-color: rgba(255, 255, 0, 0.915);
+    color: black;
+    font-size: 1.5vmax;
+    border-style: groove;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 8%;
+}
+.container3 input[id='clear']:hover{
+    background-color: aquamarine;
+}
