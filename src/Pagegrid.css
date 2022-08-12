@@ -28,6 +28,7 @@ table {
      padding: 2%;
      font-size: 1vmax;
      font-weight: bold;
+     word-wrap: break-word;
   }
   td[id="email"]{
         word-wrap: break-word;
@@ -47,6 +48,7 @@ table {
     display: flex;
     justify-content: center;
     margin-top: 2vh;
+    font-size: 1vmax;
    
   }
   .paginationbutton a{
