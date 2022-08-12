@@ -2,6 +2,9 @@ import React,{useState} from "react";
 import JsonData from "./Mock_data.json";
 import ReactPaginate from "react-paginate";
 import './Pagegrid.css'
+import { BsFillTrashFill } from "react-icons/bs";
+import { BsFillPencilFill } from "react-icons/bs";
+
 
 
 
@@ -44,8 +47,8 @@ function Pagegrid(){
                         <td>{user.city}</td>
                         <td>{user.address}</td>
                         <td>{user.pincode}</td>
-                        <td>Edit</td>
-                        <td>Delete</td>
+                        <td> <label id="edit"><BsFillPencilFill/></label></td>
+                        <td> <label id="clear1"><BsFillTrashFill/></label></td>
                     </tr>
                 </table>
                     </div>

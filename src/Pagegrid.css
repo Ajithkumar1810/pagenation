@@ -75,3 +75,17 @@ table {
     color:white;
     background-color: rgb(119, 194, 218);
   }
+  label[id="clear1"]{
+    font-size: 1.2vmax;
+    background-color: rgb(235, 190, 9);
+    padding: .2vmax;
+    border-radius: 26%;
+
+  }
+  label[id="edit"]{
+    font-size: 1.2vmax;
+    background-color: rgb(235, 190, 9);
+    padding: .2vmax;
+    border-radius: 26%;
+
+  }
