@@ -1,10 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Dataentry.css';
+
 import Pagegrid from './Pagegrid.js';
 function Dataentry() {
     return (
+      
         <div className='Dataentry'>
         <div className="container">
+          <div className='topics'>
+            <label>Angular 12 CRUD Example with Web API</label>
+          </div>
         <div className="container1">
             <input type='text' id="firstname"  placeholder="FirstName"></input>
             <input type='text' id="lastname" placeholder="LastName"></input>
@@ -54,6 +59,7 @@ function Dataentry() {
         <div className='container3'>
         <input type='text' id="filter"  placeholder="Filter"></input>
         <input type='button'  id='clear' value='clear'></input>
+        
         </div>
         <Pagegrid />
       </div>

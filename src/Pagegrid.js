@@ -44,6 +44,8 @@ function Pagegrid(){
                         <td>{user.city}</td>
                         <td>{user.address}</td>
                         <td>{user.pincode}</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
                     </tr>
                 </table>
                     </div>
@@ -66,6 +68,8 @@ function Pagegrid(){
                         <td>City</td>
                         <td>Address</td>
                         <td>Pincode</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
                         </tr>
                 </table>
                 {displayUser}

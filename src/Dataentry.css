@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color:azure; */
+    background-color:azure;
+    
 }
 .Dataentry{
     width: 100%;
@@ -10,22 +11,37 @@
 }
 .container{
     width: 100%;
-    background-color: #2d2dc66b;
+    background-color: white;
     border-style: outset;
     border-radius: 5%;
     padding-top: 2%;
     margin-top: 2%;
+    box-shadow: 5px 10px #888888;
+}
+.topics{
+    /* background:linear-gradient(to bottom ,rgb(164, 164, 47),rgb(200, 148, 6)); */
+    font-size: 2.5vmax;
+    text-align: left;
+    border-radius: 5em;
+    background-color: rgb(235, 190, 9);
+}
+.topics label{
+    /* background:linear-gradient(to bottom ,rgb(164, 164, 47),rgb(226, 171, 6)); */
+    font-size: 2.5vmax;
+    text-align: left;
+    margin-left: 2%;
+    background-color: rgb(235, 190, 9);
 }
 .container1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: white;
     padding-bottom: 2%;
     
 }
 .container1 input,.container1 select{
-  background-color: rgb(244, 248, 248);
+  background-color: white;
   border: none;
   border-bottom:black ;
   border-bottom: groove;
@@ -36,6 +52,7 @@
 }
 .container1 select{
     width: 12%;
+    
 }
 .genderclass{
     font-size: 1.2vmax;
@@ -43,22 +60,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: white;
     
+}
+.genderclass label{
+    background-color: white;
 }
 .container2{
     align-items:flex-start;
     display: flex;
     margin-top: 2%;
+    background-color: white;
    
     
 }
 .container2 input{
-    background-color: rgba(255, 255, 0, 0.915);
-    width: 10vmax;
+    background-color: rgb(235, 190, 9);
+    width: 7vmax;
+    margin-left: 2%;
     margin-right:2% ;
-    font-size: 2vmax;
+    font-size: 1.2vmax;
     cursor: pointer;
     border-radius: 8%;
+
 }
 .container2 input:hover{
     background-color: aquamarine;
@@ -66,12 +90,13 @@
 .container3{
     align-items:flex-start;
     display: flex;
+    margin-top: 5vh;
     
    
 
 }
 .container3 input{
-    background-color: rgb(244, 248, 248);
+    background-color: white;
   border: none;
   border-bottom:black ;
   border-bottom: groove;
@@ -83,10 +108,10 @@
 
 }
 .container3 input[id='clear']{
-    width: 10%;
-    background-color: rgba(255, 255, 0, 0.915);
+    width: 7vmax;
+    background-color: rgb(235, 190, 9);
     color: black;
-    font-size: 1.5vmax;
+    font-size: 1.2vmax;
     border-style: groove;
     border-color: black;
     cursor: pointer;
