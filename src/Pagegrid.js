@@ -69,6 +69,7 @@ function Pagegrid(){
                         </tr>
                 </table>
                 {displayUser}
+                <br></br>
             <ReactPaginate
                 previousLabel={"Previous"}
                 nextLabel={"Next"}
