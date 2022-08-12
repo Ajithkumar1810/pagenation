@@ -4,6 +4,10 @@
     box-sizing: border-box;
     /* background-color:azure; */
 }
+.Dataentry{
+    width: 100%;
+    margin-right: 2%;
+}
 .container{
     width: 100%;
     background-color: #1722a26b;
@@ -34,11 +38,11 @@
     width: 12%;
 }
 .genderclass{
-    font-size: 1.2rem;
+    font-size: 1.2vmax;
     padding-top: 2%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
 }
 .container2{

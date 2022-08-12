@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Dataentry.css';
+import Pagegrid from './Pagegrid.js';
 function Dataentry() {
     return (
-        
-      <div className="container">
+        <div className='Dataentry'>
+        <div className="container">
         <div className="container1">
             <input type='text' id="firstname"  placeholder="FirstName"></input>
             <input type='text' id="lastname" placeholder="LastName"></input>
@@ -11,10 +12,15 @@ function Dataentry() {
             <input type='email' id="email" placeholder="FirstName"></input>
             <div className="genderclass">
             <label id='gender'>Gender:</label>
+            <br></br>
             <input type='radio' id="male" value="Male"></input>
             <label>Male</label>
+            <br></br>
             <input type='radio' id="male" value="Female"></input>
             <label>Female</label>
+            <br></br>
+            {/* <input type='radio' id="others" value="others"></input>
+            <label>Others</label> */}
             </div><br></br>
             <select name="country" id="country" placeholder='Country'>
             <option >Country</option>
@@ -25,7 +31,7 @@ function Dataentry() {
             </select>
             <select name="state" id="state" placeholder='State'>
             <option >State</option>
-            <option value="tamilnadu">tamilnadu</option>
+            <option value="Tamilnadu">tamilnadu</option>
             <option value="Andhra">Andhra</option>
             <option value="Delhi">Delhi</option>
             <option value="Goa">Goa</option>
@@ -49,8 +55,10 @@ function Dataentry() {
         <input type='text' id="filter"  placeholder="Filter"></input>
         <input type='button'  id='clear' value='clear'></input>
         </div>
-        
+        <Pagegrid />
       </div>
+      </div>
+
     );
   }
   
