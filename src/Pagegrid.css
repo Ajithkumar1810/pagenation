@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color:azure; */
+}
+table {
+    border: 2px solid rgb(7, 7, 7);
+    width: 100%;
+    height: 50px;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+  }
+  table[id="title"]{
+        background-color: aquamarine;
+        font-size: 1.2vmax;
+  }
+    
+  th {
+    border-bottom: 1px solid black;
+  }
+    
+  td {
+    text-align: center;
+    border:1px solid black;
+     padding: 2%;
+     font-size: 1vmax;
+     font-weight: bold;
+  }
+  td[id="email"]{
+        display: block;
+        
+  }
+  tr{
+    border: 1px solid black;
+  }
