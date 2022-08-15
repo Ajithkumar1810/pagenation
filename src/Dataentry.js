@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Dataentry.css';
-import { BsFillTrashFill } from "react-icons/bs";
+// import { BsFillTrashFill } from "react-icons/bs";
 import Pagegrid from './Pagegrid.js';
 function Dataentry() {
     return (
@@ -56,12 +56,8 @@ function Dataentry() {
             <input type='button' value="Submit" id='submit'></input>
             <input type='button' value='Reset' id='reset'></input>
         </div>
-        <div className='container3'>
-        <input type='text' id="filter"  placeholder="Filter"></input>
-        {/* <input type='button'  id='clear' value={"clear"}></input> */}
-        <label id="clear"><BsFillTrashFill/></label>
+       
         
-        </div>
         <Pagegrid />
       </div>
       </div>

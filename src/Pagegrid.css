@@ -89,3 +89,9 @@ table {
     border-radius: 26%;
 
   }
+  input[id="sort"]{
+    background-color: rgb(235, 190, 9);
+    padding: .3vmax;
+    border-radius: 2vmax;
+    font-size: 1vmax;
+  }

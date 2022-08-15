@@ -2,15 +2,32 @@ import React,{useState} from "react";
 import JsonData from "./Mock_data.json";
 import ReactPaginate from "react-paginate";
 import './Pagegrid.css'
-import { BsFillTrashFill } from "react-icons/bs";
+import { BsFillTrashFill} from "react-icons/bs";
 import { BsFillPencilFill } from "react-icons/bs";
+import './Dataentry.js';
 
 
 
 
 
 function Pagegrid(){
-    const [users]=useState(JsonData);
+   
+    
+    // let g=document.getElementById("filter").value;
+    let users1=JsonData;
+   
+        users1=[...users1].sort((a,b)=>a.firstname>b.firstname?1:-1,);
+    
+        
+         users1 = users1.filter(obj => {
+            return obj.firstname !== "";
+          });
+         
+    
+        
+    
+    const [users]=useState(users1 );
+   
     // , setUser
     const [pageNumber,setPageNumber]=useState(0)
     const userPerPage=2
@@ -37,7 +54,7 @@ function Pagegrid(){
                 <table >
                     <tr>
                         <td><input type="checkbox"></input></td>
-                        <td>{user.firstname}</td>
+                        <td >{user.firstname}</td>
                         <td>{user.lastname}</td>
                         <td>{user.dob}</td>
                         <td id="email">{user.email}</td>
@@ -57,11 +74,19 @@ function Pagegrid(){
     
     return (
         <div className="Pagegrid">
+            {/* <input type="button" id='sort' value ="Sort the tabel"  onClick={sortvalue()}></input> */}
+            <div className='container3'>
+        <input type='text' id="filter"  placeholder="Filter" ></input>
+        {/* <input type='button'  id='clear' value={"clear"}></input> */}
+        <label id="clear"><BsFillTrashFill/></label>
+        
+        
+        </div>
             
             <table id="title">
                     <tr>
             <td><input type="checkbox"></input></td>
-                        <td>FirstName</td>
+                        <td>FirstName </td>
                         <td>LastName</td>
                         <td>Date of birth</td>
                         <td>Email</td>
@@ -78,6 +103,8 @@ function Pagegrid(){
                 {displayUser}
                 <br></br>
             <ReactPaginate
+                page={1}
+                sizePerPage={5}
                 previousLabel={"<"}
                 nextLabel={">"}
                 pageCount={pageCount}
