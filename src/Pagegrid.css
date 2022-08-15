@@ -80,14 +80,20 @@ table {
     background-color: rgb(235, 190, 9);
     padding: .2vmax;
     border-radius: 26%;
-
+    cursor: pointer;
+  }
+  label[id="clear1"]:hover{
+    background-color: aqua;
   }
   label[id="edit"]{
     font-size: 1.2vmax;
     background-color: rgb(235, 190, 9);
     padding: .2vmax;
     border-radius: 26%;
-
+cursor: pointer;
+  }
+  label[id="edit"]:hover{
+    background-color: aqua;
   }
   input[id="sort"]{
     background-color: rgb(235, 190, 9);

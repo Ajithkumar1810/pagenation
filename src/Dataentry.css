@@ -126,4 +126,9 @@ label[id="clear"]{
     background-color: rgb(235, 190, 9);
     padding: .2vmax;
     border-radius: 26%;
+    cursor: pointer;
+}
+label[id="clear"]:hover{
+    background-color: aquamarine;
+    
 }
