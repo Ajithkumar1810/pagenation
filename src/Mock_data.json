@@ -1,5 +1,5 @@
 [{"firstname":"ajith","lastname":"kumar","dob":"18-10-1998","email":"ajith@gmail.com","gender":"male","country":"india","state":"Tamilnadu","city":"Amboor","address":"katpadi","pincode":"632007"},
-{"firstname":"kumara","lastname":"sami","dob":"10-02-2012","email":"sami@gmail.com","gender":"male","country":"Andorra","state":"Andhra","city":"vellore","address":"gandhi nagra","pincode":"632145"},
 {"firstname":"rani","lastname":"babu","dob":"12-05-1974","email":"babu@gmail.com","gender":"female","country":"Haiti","state":"Delhi","city":"Ranipet","address":"east road","pincode":"741258"},
 {"firstname":"thomas","lastname":"edison","dob":"13-06-2014","email":"edison@email.com","gender":"male","country":"Albania","state":"Goa","city":"Ammor","address":"south road","pincode":"521463"},
+{"firstname":"kumara","lastname":"sami","dob":"10-02-2012","email":"sami@gmail.com","gender":"male","country":"Andorra","state":"Andhra","city":"vellore","address":"gandhi nagra","pincode":"632145"},
 {"firstname":"ajay","lastname":"kumaran","dob":"12-03-1987","email":"ajay@gmail.com","gender":"male","country":"india","state":"Tamilnadu","city":"vellore","address":"katpadi","pincode":"632005"}]
