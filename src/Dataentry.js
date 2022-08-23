@@ -23,16 +23,22 @@ function Dataentry() {
         const [users,setuser]=useState(users1);
         const [filterval,setfilterval]=useState('')   
         const [newdata,setnewdata]=useState('')
-  
+        const [deletevalue,setdeletevalue]=useState('')
+      
   
 
         const findvalue=(e)=>{
             setfilterval(e.target.value);
             if(filterval!==""){
               if(newdata===''){
+                if(deletevalue!==''){
+                      setuser(deletevalue)
+                }
+                else{
             setuser(users1.filter(obj => {
               return obj.firstname.match(filterval);
             }))
+          }
           }
           else{
             setuser(([...users1,...newdata].sort((a,b)=>a.firstname>b.firstname?1:-1,)).filter(obj => {
@@ -50,12 +56,9 @@ function Dataentry() {
         //   // }))
           
         // }
-    function adddata(){
+    const adddata=()=>{
       document.getElementById("submitmsg").innerHTML="Submited sucessfully";
-      
-      
-      
-      setnewdata([{firstname:FirstNameDOM,
+        setnewdata([{firstname:FirstNameDOM,
         lastname:LastnameDOM,
         dob:DateDOM,
         email:EmailDOM,
@@ -67,6 +70,14 @@ function Dataentry() {
         pincode:PincodeDOM}])
         
         setuser([...users1,...newdata].sort((a,b)=>a.firstname>b.firstname?1:-1,))
+    }
+    const deletedata=(name)=>{
+      
+      const dvalue=name
+      setdeletevalue(users1.filter(item=>item.firstname!==dvalue))
+      // setuser(deletevalue)
+      document.getElementById("submitmsg").innerHTML=dvalue +"deleted sucessfully";
+
     }
       
 
@@ -104,7 +115,7 @@ function Dataentry() {
                         <td>{user.address}</td>
                         <td>{user.pincode}</td>
                         <td> <label id="edit" ><BsFillPencilFill /></label></td>
-                        <td> <label id="clear1"><BsFillTrashFill/></label></td>
+                        <td> <label id="clear1" onClick={()=>deletedata(user.firstname)}><BsFillTrashFill/></label></td>
                     </tr>
                 </table>
                     </div>
