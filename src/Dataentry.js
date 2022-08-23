@@ -21,18 +21,24 @@ function Dataentry() {
       const [AddressDOM,setAddressDOM]=React.useState('');
       const [PincodeDOM,setPincodeDOM]=React.useState('');
         const [users,setuser]=useState(users1);
-        const [filterval,setfilterval]=useState('')
-   
-  
+        const [filterval,setfilterval]=useState('')   
+        const [newdata,setnewdata]=useState('')
   
   
 
         const findvalue=(e)=>{
             setfilterval(e.target.value);
             if(filterval!==""){
+              if(newdata===''){
             setuser(users1.filter(obj => {
               return obj.firstname.match(filterval);
             }))
+          }
+          else{
+            setuser(([...users1,...newdata].sort((a,b)=>a.firstname>b.firstname?1:-1,)).filter(obj => {
+              return obj.firstname.match(filterval);
+            }))
+          }
           }
           else{
             setuser(users1)
@@ -49,7 +55,7 @@ function Dataentry() {
       
       
       
-      const newdata=[{firstname:FirstNameDOM,
+      setnewdata([{firstname:FirstNameDOM,
         lastname:LastnameDOM,
         dob:DateDOM,
         email:EmailDOM,
@@ -58,7 +64,7 @@ function Dataentry() {
         state:StateDOM,
         city:CityDOM,
         address:AddressDOM,
-        pincode:PincodeDOM}]
+        pincode:PincodeDOM}])
         
         setuser([...users1,...newdata].sort((a,b)=>a.firstname>b.firstname?1:-1,))
     }
@@ -114,7 +120,7 @@ function Dataentry() {
             <label>Angular 12 CRUD Example with Web API</label>
           </div>
         <div className="container1">
-            <input type='text' id="firstname"  placeholder="FirstName" onChange={e => setFirstNameDOM(e.target.value)}></input>
+            <input type='text' id="firstname"  placeholder="FirstName" onChange={e => setFirstNameDOM(e.target.value)} ></input>
             <input type='text' id="lastname" placeholder="LastName" onChange={e => setLastnameDOM(e.target.value)}></input>
             <input type='date' id="date" onChange={e => setDateDOM(e.target.value)}></input>
             <input type='email' id="email" placeholder="Email" onChange={e => setEmailDOM(e.target.value)}></input>
